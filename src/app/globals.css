@@ -8,9 +8,9 @@
     --background: 27 27 27;
     --foreground: 255 217 13; 
     --muted: 115 115 115;
-    --accent: 254 254 91; 
+    --accent: 110 10 31; 
     /* foreground color (yellow) - RGB: 255/217/13, HEX: #FFD90D */
-    /* accent HEX code:  #FEFE5B */
+    /* accent color (burgundy) -  RGB: 110/10/31, HEX: #6E0A1F */
   }
 }
 
