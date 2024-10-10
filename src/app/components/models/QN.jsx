@@ -9,20 +9,23 @@ import { useFrame } from '@react-three/fiber'
 
 export default function QN(props) {
   const { nodes, materials } = useGLTF("/models/qn-transformed.glb")
-  const groupRef = useRef()
+  const modelRef = useRef()                 // Create a reference to the QN model
   
    // Rotate the model on each frame
-   useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.007 // Adjust rotation speed as needed
+   useFrame((state) => {
+    if (modelRef.current) {
+        // modelRef.current.position.y = + Math.sin(state.clock.elapsedTime) * 0.2  // up and down animation 
+        modelRef.current.rotation.y += 0.007 // Adjust rotation speed as needed
     }
   })
 
+
   return (
-    <group ref={groupRef} {...props} dispose={null}
-    position={[0, 0, 0]} 
+    <group {...props} dispose={null}
+    ref={modelRef}
+    position={[0, .25, 0]} 
     rotation={[0, 0, 0]} 
-    scale ={[3.25, 3.25, 3.25]}
+    scale ={[4.25, 4.25, 4.25]}
     >
       <mesh
         name="Path"

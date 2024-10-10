@@ -6,14 +6,13 @@ import clsx from 'clsx'
 import React, { Suspense } from 'react'
 
 const RenderModel = ({children, className}) => {
-
   return (
     <Canvas className={clsx("w-screen h-screen relative", className)}> 
         <Suspense fallback={null}> 
             {children}
         </Suspense>
-        <Environment preset='forest'/>   
-    </Canvas>
+        <Environment preset='park'/>   
+    </Canvas> 
   )
 }
 

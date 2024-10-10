@@ -2,6 +2,8 @@ import Image from "next/image";
 import bg from "../../public/background/home-background.png"
 import RenderModel from "./components/RenderModel";
 import QN from "./components/models/QN";
+import Navigation from "./components/navigation";
+import NavigationHome from "./components/navigation";
 
 export default function Home() {
   return (
@@ -14,14 +16,16 @@ export default function Home() {
       style={{ zIndex: -1 }} 
       />
       
-    <div className="w-full h-screen">
-      {/* navigaton and 3d model */}
+    <div className="w-full h-screen flex flex-col">
+      {/* 3D model and navigation */}
+      <div className="flex-grow "> 
         <RenderModel>
-          <QN />
+            <QN />
         </RenderModel>
+      </div>
+      <NavigationHome />
     </div>
     
-    
-    </main>
+  </main>
   );
 }
