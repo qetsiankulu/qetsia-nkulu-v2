@@ -5,13 +5,13 @@ This is the second iteration of qetsiankulu.com built using Next.js, Three,js, a
 
 #### Home 
 
-### About 
+#### About 
 
-### Projects 
+#### Projects 
 
-### Contact 
+#### Contact 
 
-### Mobile Version 
+#### Mobile Version 
 
 
 ### Resources Used in This Project
@@ -30,7 +30,7 @@ This is the second iteration of qetsiankulu.com built using Next.js, Three,js, a
 - Convert 3d models to JSX using [Gltf JSX](https://github.com/pmndrs/gltfjsx)
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). <br />
 Inspired by Codebucks's ["How to Create a Stunning Portfolio Website with Nextjs, Three.js, and Tailwind CSS](https://www.youtube.com/watch?v=T5t46vuW8fo)
 
 
