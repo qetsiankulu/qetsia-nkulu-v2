@@ -17,7 +17,7 @@ This is the second iteration of qetsiankulu.com built using Next.js, Three,js, a
 ### Resources Used in This Project
 
 #### 3D Model
-- Created with the help of [Vectary] (https://www.vectary.com/)
+- Created with the help of [Vectary](https://www.vectary.com/)
 
 
 #### Images 
