@@ -9,9 +9,15 @@
     --foreground: 255 217 13; 
     --muted: 115 115 115;
     --accent: 110 10 31; 
+    --custom-brown: 
     /* foreground color (yellow) - RGB: 255/217/13, HEX: #FFD90D */
     /* accent color (burgundy) -  RGB: 110/10/31, HEX: #6E0A1F */
   }
+}
+
+.custom-bg {
+  @apply  bg-background/20 border border-foreground/30 border-solid backdrop-blur-[6px] 
+  shadow-glass-inset hover:shadow-glass-sm;
 }
 
 

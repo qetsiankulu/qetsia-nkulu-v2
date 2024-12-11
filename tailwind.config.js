@@ -22,9 +22,12 @@ module.exports = {
       boxShadow: { 
         'glass-inset': 'inset 0 17px 5px -9px rgba(254, 254,91, 0.05)',
         'glass-sm': '5px 5px 20px 0px rgba(254, 254,91, 0.3)'
-      }
-
+      }, 
+      screens: { 
+        'xxs': '320px', // Extra extra small screens
+        'xs': '425px',  // Extra small screens
     
+      }
     },
   },
   plugins: [],
