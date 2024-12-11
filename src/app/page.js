@@ -30,6 +30,7 @@ export default function Home() {
             sm:max-w-[500px]  sm:max-h-[500px]
             xs:max-w-[350px]  xs:max-h-[350px]
             xxs:max-w-[250px] xxs:max-h-[250px]
+            animate-fadeIn
           "
         > 
           <RenderModel>

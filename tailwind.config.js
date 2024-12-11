@@ -27,7 +27,16 @@ module.exports = {
         'xxs': '320px', // Extra extra small screens
         'xs': '425px',  // Extra small screens
     
-      }
+      }, 
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 5.0s ease-out',
+      },
     },
   },
   plugins: [],

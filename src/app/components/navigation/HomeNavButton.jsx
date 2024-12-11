@@ -2,6 +2,7 @@
 
 import { Home, User, Palette, Mail, FileText } from 'lucide-react'
 import Link from 'next/link'
+import { motion } from "framer-motion"
 
 
 const getIcon = (icon) => {
@@ -22,10 +23,19 @@ const getIcon = (icon) => {
     }
 }
 
+const item = { 
+    hidden: {scale: 0}, 
+        show: {scale: 1}
+}
+
+const NavLink = motion(Link)
+
+
 const HomeNavButton = ({label, link, icon, newTab}) => {
     return (
         <div className='cursor-pointer px-[50px] md:px-[40px] xs:px-[30px] xxs:px-[10px]' >
-            <Link 
+            <NavLink 
+            variants = {item}
             href = {link} 
             target= {newTab ? '_blank' : '_self'} 
             className='text-foreground group rounded-full flex items-center justify-center 
@@ -48,7 +58,7 @@ const HomeNavButton = ({label, link, icon, newTab}) => {
                 rounded-md shadow-lg whitespace-nowrap'>
                     {label}
                 </span>
-            </Link>
+            </NavLink>
         </div>
 
     )
