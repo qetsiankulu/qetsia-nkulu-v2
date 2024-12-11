@@ -1,4 +1,3 @@
-
 "use client"
 import { Environment } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
@@ -11,10 +10,7 @@ const RenderModel = ({children, className}) => {
         <Suspense fallback={null}> 
             {children}
         </Suspense>
-        <Environment preset='forest'/>   
-
-        {/* yellow model preset = 'forest' */}
-        {/* black model preset = 'park' */}
+        <Environment preset='sunset'/>   
     </Canvas> 
   )
 }

@@ -18,55 +18,54 @@ Websites:
 
 export const projectsData = [
   {
-    // properties to add: image icon, technologies used, type of project
     id: 1,
-    name: "Nujabes Tribute",
-    // image: 
-    description: "A responsive website as a tribute to the late godfather of hip-hop",
-    date: "2023",
-    // technologies used: HTML, CSS
-    // type of project: Responsive Web Design, Front-End 
-    demoLink: "https://qetsiankulu.github.io/nujabes-tribute/",
-  }, 
-  {
-    // properties to add: image icon, technologies used, type of project
-    id: 2,
     name: "PhotoScavengerHunt",
-    // image: 
-    description: "PhotoScavengerHunt is an app that.....",
+    imagePath: "projects/codepath.png",
+    imageAlt: "Codepath Logo",
+    description: "PhotoScavengerHunt is an app that has a list which requires the user to attach photos based on the task. After attaching the photo to a task, the app shows the user where that photo was taken in a map. Completed as coursework for CodePath iOS 102.",
     date: "March 1 2024",
-    // technologies used: Xcode, Swift, UIKit, PHPicker, MapKit, PhotosUI
-    // type of project: iOS Native Development 
-    demoLink: "https://www.loom.com/share/9b658daa464342a291a0be4bcf1cf7e7",
+    technologiesUsed: ["Xcode", "Swift", "UIKit", "PHPicker", "MapKit", "PhotosUI"],
+    githubLink: "https://github.com/qetsiankulu/ios102-project1-scavenger-hunt",
+    demoLink: "https://www.loom.com/share/9b658daa464342a291a0be4bcf1cf7e7"
   }, 
   {
-    // properties to add: image icon, technologies used, type of project
-    id: 3,
+    id: 2,
     name: "TriviaGame",
-    // image: 
-    description: "TriviaGame is an app that.....",
+    imagePath: "projects/codepath.png",
+    imageAlt: "Codepath Logo",
+    description: "TriviaGame is an app that challenges users with trivia questions spanning a variety of categories and difficulties, providing a dynamic, interactive learning experience. Completed as coursework for CodePath iOS 102.",
     date: "March 31 2024",
-    // technologies used: Swift, Xcode  UIKit, PHPicker, MapKit, PhotosUI
-    // type of project: iOS Native Development 
+    technologiesUsed: ["Swift", "Xcode", "SwiftUI", "RESTful API", "JSON"],
+    githubLink: "https://github.com/qetsiankulu/ios102-project5-triviagame", 
     demoLink: "https://www.loom.com/share/b6a2d7d3a49141dca6771dc1542be7ec",
   }, 
   {
-    // properties to add: image icon, technologies used, type of project
-    id: 4,
+    id: 3,
     name: "TranslateMe",
-    // image: 
-    description: "TranslateMe is an app that.....",
+    imagePath: "projects/codepath.png",
+    imageAlt: "Codepath Logo",
+    description: "TranslateMe is an app that translates English text into multiple languages like Arabic, Chinese, French, German, Italian, and Spanish. Every translation is saved and accessible to user to view. Completed as coursework for CodePath iOS 102.",
     date: "April 5 2024",
-    // technologies used: Swift, Xcode, SwiftUI, RESTful API, Firebase
-    // type of project: iOS Native Development 
+    technologiesUsed: ["Swift", "Xcode", "SwiftUI", "RESTful API", "Firebase"],
+    githubLink: "https://github.com/qetsiankulu/ios102-project6-translateme", 
     demoLink: "https://www.loom.com/share/6259d6ec881f49e7826069c9887871d2",
   }, 
-
-  
-
-
-
 ];
+
+
+export const archivedProjects = [
+  {
+    id: 1,
+    name: "Nujabes Tribute",
+    imagePath: "projects/nujabes.jpeg",
+    imageAlt: "Nujabes Drawing",
+    description: "A simple responsive webpage designed as a tribute to the late godfather of hip-hop. Built with an embedded media player using the Spotify API.",
+    date: "2023",
+    technologiesUsed: ["HTML", "CSS", "Responsive Web Design"],
+    githubLink: "https://github.com/qetsiankulu/nujabes-tribute",
+    demoLink: "https://qetsiankulu.github.io/nujabes-tribute/",
+  }, 
+]
 
 export const BtnList = [
   { label: "About", link: "/about", icon: "about", newTab: false },

@@ -8,17 +8,15 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 export default function QN(props) {
-  const { nodes, materials } = useGLTF("/models/qn-yellow-transformed.glb")
+  const { nodes, materials } = useGLTF('/models/qn-yellow-transformed.glb')
   const modelRef = useRef()                 // Create a reference to the QN model
   
    // Rotate the model on each frame
    useFrame((state) => {
     if (modelRef.current) {
-        // modelRef.current.position.y = + Math.sin(state.clock.elapsedTime) * 0.2  // up and down animation 
         modelRef.current.rotation.y += 0.007 // Adjust rotation speed as needed
     }
   })
-
 
   return (
     <group {...props} dispose={null}
@@ -37,41 +35,8 @@ export default function QN(props) {
         scale={0.001}
       />
 
-      {/* Black Model */}
-      {/* <mesh
-        name="Path"
-        castShadow
-        receiveShadow
-        geometry={nodes.Path.geometry}
-        material={nodes.Path.material}
-        position={[-0.017, -0.035, -0.096]}
-        rotation={[-0.011, 0, 0]}
-        scale={0.001}
-      /> */}
-
     </group>
   )
-
-
-
-//   return (
-//     <group {...props} dispose={null}
-//         position = {[0, 0, 0]}
-//         scale ={[3.25, 3.25, 3.25]}
-
-//     >
-//       <mesh
-//         name="Path"
-//         castShadow
-//         receiveShadow
-//         geometry={nodes.Path.geometry}
-//         material={nodes.Path.material}
-//         position={[-0.017, -0.035, -0.096]}
-//         rotation={[-0.011, 0, 0]}
-//         scale={0.001}
-//       />
-//     </group>
-//   )
 }
 
 useGLTF.preload("/models/qn-yellow-transformed.glb")
