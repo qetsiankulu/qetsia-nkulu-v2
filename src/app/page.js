@@ -1,12 +1,12 @@
 import Image from "next/image";
 import bg from "../../public/background/home-background.jpg"
-import RenderModel from "./components/RenderModel";
-import QN from "./components/models/QN";
-import HomeNavigation from "./components/navigation";
+import RenderModel from "./components/homepage/RenderModel";
+import QN from "./components/homepage/QN";
+import HomeNavigation from "./components/homepage/HomeNavigation";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-between relative">
+    <main className="flex min-h-screen items-center relative">
        {/* Background Image */}
       <Image 
       src={bg} 

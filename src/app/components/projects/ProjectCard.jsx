@@ -17,7 +17,7 @@ const getIcon = (icon) => {
     }
 }
 
-const ProjectLayout = ({name, description, imagePath, imageAlt, technologiesUsed, githubLink, demoLink}) => {
+const ProjectCard = ({name, description, imagePath, imageAlt, technologiesUsed, githubLink, demoLink}) => {
   return ( 
     <div className='custom-bg flex items-center justify-between w-full shadow-md relative rounded-xl p-3'>
         <div className="flex items-center justify-between p-4 max-w-4xl mx-auto">
@@ -62,4 +62,4 @@ const ProjectLayout = ({name, description, imagePath, imageAlt, technologiesUsed
   )
 }
 
-export default ProjectLayout
+export default ProjectCard

@@ -1,65 +1,125 @@
 "use client"
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import React, { useState, useRef, useEffect } from "react"
+import { Link } from "react-scroll"
+import {Menu, X} from "lucide-react"
+
 
 const NavigationBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);          // State variable to check if Mobile Menu has been toggled
+
+  const asideRef = useRef(null); // Ref for the `aside` menu
+  const buttonRef = useRef(null); // Ref for the `button`
+
+  useEffect(() => {
+    // Function to check if the click is outside
+    const handleClickOutside = (event) => {
+      if (
+        asideRef.current && 
+        !asideRef.current.contains(event.target) && // Click is outside the `aside`
+        buttonRef.current && 
+        !buttonRef.current.contains(event.target) // Click is outside the `button`
+      ) {
+        setIsToggled(false); // Close the menu
+      }
+    }
+
+     // Add event listener for clicks
+     document.addEventListener("mousedown", handleClickOutside);
+
+     return () => {
+       // Clean up the event listener
+       document.removeEventListener("mousedown", handleClickOutside);
+     };
+   }, [])
 
   return (
-    <nav className="w-full bg-amber-950 bg-opacity-0 text-foreground shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div>
-            <a href="/">
-                <img src="/qn-logo-yellow.svg" alt="Qetsia's Logo" className="w-20 h-auto object-cover" />
-            </a>
-        </div>
+    <header className={`flex justify-between mx-[50px] w-full ${isToggled ? "" :"backdrop-blur-lg bg-black/10 bg-opacity-20"} shadow-xl`}>
+      <nav className="flex items-center justify-between sticky top-0 w-full text-foreground z-50  ">
+        <div className="w-full px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <div>
+              <a href="/">
+                  <img src="/qn-logo-yellow.svg" alt="Qetsia's Logo" className="w-20 h-auto object-cover"/>
+              </a>
+          </div>
 
-        {/* Links */}
-        <div className="hidden md:flex space-x-6">
-          {["About", "Projects", "Contact", "Resume"].map((section) => (
-            <Link
-              key={section}
-              to={section.toLowerCase()}
-              smooth={true}
-              duration={500}
-              className="hover:text-white cursor-pointer"
-            >
-              {section}
-            </Link>
-          ))}
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="block md:hidden focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <span className="material-icons">{isOpen ? "close" : "menu"}</span>
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-black bg-opacity-90">
-          <ul className="flex flex-col items-center space-y-4 py-4">
-            {["About", "Projects", "Contact", "Resume"].map((section) => (
+          {/* Desktop View Links */}
+          <div className="hidden md:flex space-x-6 font-robotoMono text-xl">
+            {["About", "Projects", "Contact", "Resume"].map((navItem) => (
               <Link
-                key={section}
-                to={section.toLowerCase()}
+                key={navItem}
+                to={navItem.toLowerCase()}
                 smooth={true}
                 duration={500}
-                className="hover:text-teal-400 cursor-pointer"
-                onClick={() => setIsOpen(false)}
+                className="hover:text-white cursor-pointer"
               >
-                {section}
+                {navItem}
               </Link>
             ))}
-          </ul>
-        </div>
-      )}
+          </div>
+    
+
+          {/* Mobile Menu Button */}
+          <button
+            ref={buttonRef} 
+            className="block md:hidden focus:outline-none z-30 relative w-10 h-10"
+            onClick={() => setIsToggled(!isToggled)}
+            aria-expanded={isToggled}
+            aria-label="Toggle navigation menu"
+          >
+            {/* Menu Icon */}
+            <div
+              className={`absolute inset-0 flex items-center justify-center transform transition-transform duration-300 ease-in-out ${
+                isToggled ? "rotate-90 opacity-0" : "rotate-0 opacity-100"
+              }`}
+              style={{ positon: "absolute", width: "100%", height: "100%"}}
+            > 
+              <Menu className="text-foreground w-10 h-10" /> 
+            </div>
+
+            {/* X Icon */}
+            <div 
+              className={`absolute inset-0 flex items-center justify-center transform transition-transform duration-300 ease-in-out ${
+                isToggled ? "rotate-0 opacity-100" : "-rotate-90 opacity-0"
+              }`}
+              style={{ position: "absolute", width: "100%", height: "100%"}}
+            > 
+              <X className="text-foreground w-10 h-10" />
+            </div>
+          </button>
+          
+          {/* Mobile Menu - Side Panel */}
+        <aside 
+        ref={asideRef} 
+        className={`flex h-screen w-1/2 absolute right-0 top-0 backdrop-blur-lg bg-black/10 visible md:hidden font-robotoMono transform transition-transform duration-200 ease-in-out 
+        items-center justify-center
+        ${isToggled ? "translate-x-0" : "translate-x-full" 
+          }`}>
+              <nav className="flex justify-center items-center text-center w-full mb-[100px]">
+                <ul className="flex flex-col space-y-10">
+                  {["About", "Projects", "Contact", "Resume"].map((navItem) => (
+                    <Link
+                      key={navItem}
+                      to={navItem.toLowerCase()}
+                      smooth={true}
+                      duration={500}
+                      className="hover:text-white cursor-pointer mt-[20px] text-2xl xs:text-xl xxs:text-lg"
+                      onClick={() => setIsToggled(false)}
+                    >
+                      {navItem}
+                    </Link>
+                  ))}
+                </ul>
+          </nav>
+        </aside>
+
+
+
+
+      </div>
     </nav>
-  );
-};
+  </header>
+  )
+}
 
 export default NavigationBar;

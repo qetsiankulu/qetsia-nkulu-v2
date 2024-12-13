@@ -1,11 +1,11 @@
 
-import ProjectLayout from "./ProjectLayout"
+import ProjectCard from "./ProjectCard"
 
 const ProjectList = ({projects}) => {
   return (
     <div className=" py-4 px-16 space-y-6 flex flex-col items-center">
         {projects.map((project, index) => {
-            return <ProjectLayout key={index} {...project} />
+            return <ProjectCard key={index} {...project} />
 
         })} 
     </div>

@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { 
-        inter: ['var(--font-inter)']
+        inter: ['var(--font-inter)'],
+        robotoMono: ['Roboto Mono', 'monospace']
       }, 
       colors: { 
         background: 'rgb(var(--background))', 
@@ -35,7 +36,7 @@ module.exports = {
         },
       },
       animation: {
-        fadeIn: 'fadeIn 5.0s ease-out',
+        fadeIn: 'fadeIn 4.0s ease-out',
       },
     },
   },
