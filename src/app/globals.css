@@ -13,6 +13,17 @@
     /* foreground color (yellow) - RGB: 255/217/13, HEX: #FFD90D */
     /* accent color (burgundy) -  RGB: 110/10/31, HEX: #6E0A1F */
   }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+
+  /* Ensuring the main container takes full screen height */
+  main {
+    min-height: 100vh;
+  }
 }
 
 
