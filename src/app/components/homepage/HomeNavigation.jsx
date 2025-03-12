@@ -16,7 +16,6 @@ const container = {
 
 const HomeNavigation = () => {
   return (
-
     <div className='w-full relative flex items-center justify-center' >
         {/* Desktop Layout */}
         <motion.div 
