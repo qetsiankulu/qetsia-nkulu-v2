@@ -75,4 +75,5 @@ export const BtnList = [
 
 ];
 
+export const NAV_ITEMS = ["About", "Projects", "Contact", "Resume"];
 

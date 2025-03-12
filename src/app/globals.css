@@ -15,10 +15,49 @@
   }
 }
 
+
 .custom-bg {
   @apply  bg-background/20 border border-foreground/30 border-solid backdrop-blur-[6px] 
   shadow-glass-inset hover:shadow-glass-sm;
 }
+
+.desktop-menu { 
+  @apply hidden md:flex space-x-6 font-robotoMono text-xl
+}
+
+.desktop-menu-text { 
+  @applyhover:text-white cursor-pointer
+}
+
+.side-panel { 
+  @apply flex h-screen w-1/2 absolute right-0 top-0 backdrop-blur-lg bg-black/10 visible md:hidden font-robotoMono transform transition-transform duration-200 ease-in-out 
+  items-center justify-center
+}
+
+.menu-icon-style { 
+  @apply text-foreground w-10 h-10
+}
+
+.mobile-menu {
+  @apply flex justify-center items-center text-center w-full mb-[100px]
+}
+
+.mobile-menu-text { 
+  @apply hover:text-white cursor-pointer mt-[20px] text-2xl xs:text-xl xxs:text-lg
+
+}
+
+.mobile-menu-icon { 
+  @apply absolute inset-0 flex items-center justify-center transform transition-transform duration-300 ease-in-out
+}
+
+.toggle-button { 
+  @apply block md:hidden focus:outline-none z-30 relative w-10 h-10
+
+}
+
+
+
 
 
 @layer utilities {
