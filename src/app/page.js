@@ -44,13 +44,14 @@ export default function Home() {
 
   <main className="flex min-h-screen items-center justify-center relative flex-col">
   {/* Background Image */}
-  <Image 
-    src={bg} 
-    alt="background-image" 
-    fill 
-    className="w-full h-full object-cover object-center opacity-60"
-    style={{ zIndex: -1 }} 
-  />
+  <div className="w-full h-full fixed top-0 left-0 z-[-1]">
+    <Image 
+      src={bg} 
+      alt="background-image" 
+      fill 
+      className="object-cover object-center opacity-60" 
+    />
+  </div>
 
   <div className="w-full flex flex-col items-center justify-center h-screen">
     {/* 3D Model Container */}
