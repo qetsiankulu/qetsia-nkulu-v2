@@ -26,6 +26,21 @@
   }
 }
 
+.main-content { 
+  @apply flex min-h-screen items-center justify-center relative flex-col;
+}
+
+.background-img-container{ 
+  @apply w-full h-full fixed top-0 left-0 z-[-1];
+}
+
+.homepage-col { 
+  @apply flex flex-col items-center justify-center gap-4
+}
+
+
+
+
 
 .custom-bg {
   @apply  bg-background/20 border border-foreground/30 border-solid backdrop-blur-[6px] 

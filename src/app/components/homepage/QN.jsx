@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
-export default function QN(props) {
+export default function QN({ scale }) {
   const { nodes, materials } = useGLTF('/models/qn-yellow-transformed.glb')
   const modelRef = useRef()                 // Create a reference to the QN model
   
@@ -19,11 +19,12 @@ export default function QN(props) {
   })
 
   return (
-    <group {...props} dispose={null}
+    <group 
+    dispose={null}
     ref={modelRef}
     position={[0, .60, 0]} 
     rotation={[0, 0, 0]} 
-    scale ={[4.5, 4.5, 4.5]}
+    scale ={scale}          // Use the scale prop directly
     >
         <mesh
         castShadow
@@ -34,7 +35,6 @@ export default function QN(props) {
         rotation={[-0.011, 0, 0]}
         scale={0.001}
       />
-
     </group>
   )
 }

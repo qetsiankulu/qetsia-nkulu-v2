@@ -45,10 +45,7 @@ const HomeNavButton = ({label, link, icon, newTab}) => {
             >
                 <span className='
                         relative peer p-4
-                        lg:w-20 lg:h-20 
-                        md:w-20 md:h-20
-                        xs:w-16 xs:h-16
-                        xxs:w-14 xxs:h-14
+                        w-[3.5rem] h-[3.5rem]
                     ' 
                 > 
                     {getIcon(icon)}
