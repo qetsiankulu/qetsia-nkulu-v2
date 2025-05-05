@@ -22,18 +22,18 @@ const ProjectCard = ({name, description, imagePath, imageAlt, technologiesUsed, 
     <div className='custom-bg flex items-center justify-between w-full shadow-md relative rounded-xl p-3'>
         <div className="flex items-center justify-between p-4 max-w-4xl mx-auto">
             {/* <-- Image Section --> */}
-            <div class="w-1/3">
+            <div className="w-1/3">
                 <img
                     src={imagePath}
                     alt={imageAlt}
-                    class="w-48 -48 object-cover mx-auto"
+                    className="w-48 -48 object-cover mx-auto"
                 />
             </div>
 
             {/* <!-- Text Section --> */}
-            <div class="w-2/3 px-6">
-                <h2 class="text-xl font-semibold mb-2">{name}</h2>
-                <p class="text-white">{description} </p>
+            <div className="w-2/3 px-6">
+                <h2 className="text-xl font-semibold mb-2">{name}</h2>
+                <p className="text-white">{description} </p>
                 <ul className="mt-2 flex flex-wrap">
                     {technologiesUsed.map((tech, index) => (
                         <li key={index} className="mr-1.5 mt-2">

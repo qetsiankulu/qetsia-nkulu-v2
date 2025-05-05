@@ -17,7 +17,8 @@
   html, body {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: auto; 
+    scrollbar-color: auto;
   }
 
   /* Ensuring the main container takes full screen height */

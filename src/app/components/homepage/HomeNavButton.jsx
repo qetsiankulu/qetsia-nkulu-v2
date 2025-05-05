@@ -1,9 +1,7 @@
 "use client" // Ensure this component is client-side only 
-
 import { Home, User, Palette, Mail, FileText } from 'lucide-react'
 import Link from 'next/link'
 import { motion } from "framer-motion"
-
 
 const getIcon = (icon) => {
     const iconClass = 'w-full h-auto' 
@@ -30,8 +28,8 @@ const item = {
 
 const NavLink = motion(Link)
 
-
-const HomeNavButton = ({label, link, icon, newTab}) => {
+// Used Tailwind CSS classes for Responsiveness
+const NavButton = ({label, link, icon, newTab}) => {
     return (
         <div className='cursor-pointer px-[50px] md:px-[40px] xs:px-[30px] xxs:px-[10px]' >
             <NavLink 
@@ -43,11 +41,7 @@ const HomeNavButton = ({label, link, icon, newTab}) => {
             aria-label= {label}
             name = {label}
             >
-                <span className='
-                        relative peer p-4
-                        w-[3.5rem] h-[3.5rem]
-                    ' 
-                > 
+                <span className='relative peer p-4 w-[3.5rem] h-[3.5rem] md:w-[4.5rem] md:h-[4.5rem]'> 
                     {getIcon(icon)}
                 </span>
                 <span className='absolute hidden peer-hover:block text-sm 
@@ -61,4 +55,4 @@ const HomeNavButton = ({label, link, icon, newTab}) => {
     )
 }
 
-export default HomeNavButton
+export default NavButton
