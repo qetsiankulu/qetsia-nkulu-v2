@@ -84,7 +84,30 @@
 }
 
 
+/* Homepage - NavButton.jsx*/
+.nav-button-container { 
+  @apply cursor-pointer px-[50px] md:px-[40px] xs:px-[30px] xxs:px-[10px]
+}
 
+.nav-link { 
+  @apply text-foreground rounded-full flex items-center justify-center custom-bg
+}
+
+.nav-icon { 
+  @apply relative p-4
+}
+
+.nav-tooltip { 
+  @apply absolute hidden text-sm px-1 py-1 bottom-full mx-2 -translate-y-1/2 bg-background rounded-md shadow-lg whitespace-nowrap
+}
+
+.nav-icon-small { 
+  @apply w-[3.5rem] h-[3.5rem]
+}
+
+.nav-icon-large { 
+  @apply w-[4.5rem] h-[4.5rem]
+}
 
 
 @layer utilities {
