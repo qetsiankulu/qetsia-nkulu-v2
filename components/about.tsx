@@ -122,16 +122,25 @@ export default function About() {
 
               <div className="pl-13">
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  I graduated from UCLA in 2022 with a Bachelor of Science in Cognitive Science. 
-                  After I graduated, I worked for a UCLA startup called BruinShack (now UniShack). 
-                  I was a UI/UX Intern for 6 months. My experience in UI/UX made me realize that I was more interested in 
-                  developing apps rather than conducting user research.
+                  I graduated from UCLA in 2022 with a Bachelor of Science in Cognitive Science. Shortly after, I joined 
+                  a UCLA-affiliated startup called BruinShack as a UI/UX Intern.
                 </p>
-                   <p className="text-gray-300 mb-6 leading-relaxed">
-                  I took the first step in my programming journey by enrolling at UCLA Extension. I took classes in Javascript, Java, C#, SQL, Python. 
-                  In December 2023, I finished my certificate in Applications Programming with a 4.0 GPA.
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  During my six months there, I discovered that I was more interested in building apps rather than conducting user research. 
+                </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  This realization led me to pursue a more technical path. I enrolled in the Applications Programming certificate program at UCLA Extension.
+                </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                 I built a solid foundation in software development and completed the program in December 2023 with a 4.0 GPA.
+                </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                In addition, I completed CodePath’s iOS Development course, further expanding my skills in mobile app development.
+                 </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Currently, I'm Software Engineer Intern at Nupt.AI, helping shape the future of wedding planning through AI.
+                </p>
                 
-                </p>
               </div>
             </motion.div>
 
