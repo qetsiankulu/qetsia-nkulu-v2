@@ -7,18 +7,18 @@ import { LucideExternalLink, LucideGithub } from "lucide-react"
 
 const projects = [
   {
-    title: "Task Manager",
-    description: "An beautiful way to organize your tasks",
-    imageUrl: "/placeholder.svg?height=300&width=500",
-    githubLink: "https://github.com/",
-    demoLink: "https://example.com/",
+    title: "PhotoScavengerHunt",
+    description: "An iOS app that allows users to capture or select photos from large libraries and visualize them on a dynamic map with custom markers based on image metadata",
+    imageUrl: "images/codepath.png",
+    githubLink: "https://github.com/qetsiankulu/ios102-project1-scavenger-hunt",
+    demoLink: "https://www.loom.com/share/9b658daa464342a291a0be4bcf1cf7e7",
   },
   {
-    title: "Rotten Fruit Detector",
-    description: "Detect rotten fruits with AI",
-    imageUrl: "/placeholder.svg?height=300&width=500",
-    githubLink: "https://github.com/",
-    demoLink: "https://example.com/",
+    title: "TranslateMe",
+    description: "A multilingual translation app that uses the Memory API, Firestore for data persistence, and seamless navigation to manage and clear saved translationsI",
+    imageUrl: "images/codepath.png",
+    githubLink: "https://github.com/qetsiankulu/ios102-project6-translateme",
+    demoLink: "https://www.loom.com/share/6259d6ec881f49e7826069c9887871d2",
   },
 ]
 
@@ -87,7 +87,7 @@ export default function Projects() {
         </div>
 
         {/* View All Projects Button */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -103,7 +103,7 @@ export default function Projects() {
             <LucideGithub className="w-5 h-5 mr-2" />
             View All Projects
           </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
