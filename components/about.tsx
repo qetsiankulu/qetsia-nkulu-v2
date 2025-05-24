@@ -129,13 +129,13 @@ export default function About() {
                   During my six months there, I discovered that I was more interested in building apps rather than conducting user research. 
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  This realization led me to pursue a more technical path. I enrolled in the Applications Programming certificate program at UCLA Extension.
+                  This realization led me to pursue a more technical path. I enrolled in the Applications Programming certificate at UCLA Extension.
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                 I built a solid foundation in software development and completed the program in December 2023 with a 4.0 GPA.
+                 I built a solid foundation in software development and completed the program with a 4.0 GPA.
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                In addition, I completed CodePath’s iOS Development course, further expanding my skills in mobile app development.
+                I have also completed CodePath’s iOS Development pathway. My experience at Codepath deepened my interest in mobile technology and motivated me to become an iOS developer.
                  </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   Currently, I'm Software Engineer Intern at Nupt.AI, helping shape the future of wedding planning through AI.

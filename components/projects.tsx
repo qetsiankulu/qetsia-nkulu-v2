@@ -19,7 +19,7 @@ const projects = [
     imageUrl: "images/codepath.png",
     githubLink: "https://github.com/qetsiankulu/ios102-project6-translateme",
     demoLink: "https://www.loom.com/share/6259d6ec881f49e7826069c9887871d2",
-  },
+  }
 ]
 
 export default function Projects() {
@@ -27,6 +27,8 @@ export default function Projects() {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <SectionHeading>Projects</SectionHeading>
+            {/* Yellow underline below heading */}
+        <div className="w-24 h-1 bg-[#ffd90d] mx-auto mt-2 mb-16"></div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
