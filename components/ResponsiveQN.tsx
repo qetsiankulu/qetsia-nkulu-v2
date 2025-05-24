@@ -16,10 +16,10 @@ export default function ResponsiveQN() {
           setScale(6) // Large screens (lg+)
           break
         case width >= 768:
-          setScale(4) // Medium screens (md)
+          setScale(6) // Medium screens (md)
           break
         case width >= 320:
-          setScale(3)
+          setScale(8)
           break
         default:
           setScale(6) // Small screens (default)

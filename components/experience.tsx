@@ -12,21 +12,22 @@ const experiences = [
     period: "Mar 2025 - Present",
     location: "Los Angeles, CA",
     responsibilities: [
-      "Resolved front-end bugs across key pages by identifying and fixing production issues in the codebases",
+      "Accomplished a 33% improvement in site reliability by resolving front-end bugs across key pages by identifying and fixing production issues in the codebases",
     ],
-    logoUrl: "/placeholder.svg?height=100&width=100",
+    logoUrl: "images/nupt.png",
   },
   {
-    company: "BruinShack",
+    company: "BruinShack (now UniShack)",
     position: "UI/UX Intern",
     period: "Oct 2022 - Feb 2023",
     location: "Remote",
     responsibilities: [
-      "Deployed Web Server on AWS, achieving 99.9% uptime",
-      "Trained an AI model with 70% accuracy, improving customer recommendations",
-      "Collaborated with cross-functional teams to implement new features",
+      "Identified patterns from the user research data and generated over 11 user insights on UCLA students",
+      "Conducted a competitive analysis on 3 apartment websites to create understanding of market trends and user-interface standards ",
+      "Defined 13 relevant UI features to incorporate in the website redesign",
+      "Initiated design reviews with an industry professional during the reiteration process of the prototype biweekly}"
     ],
-    logoUrl: "/placeholder.svg?height=100&width=100",
+    logoUrl: "images/unishack.png",
   },
 ]
 
@@ -65,11 +66,11 @@ export default function Experience() {
                   }`}
                 >
                   {/* Experience card */}
-                  <div className="bg-black/40 backdrop-blur-md rounded-lg shadow-md p-6 relative z-10 border border-white/10">
+                  <div className="bg-black/40 backdrop-blur-md rounded-xl shadow-md p-6 relative z-10 border border-white/10">
                     {/* Company logo and name */}
                     <div className="flex items-start mb-4">
                       <div className="mr-4 flex-shrink-0">
-                        <div className="w-14 h-14 rounded-md overflow-hidden bg-black/30 shadow-sm border border-white/20 flex items-center justify-center p-1">
+                        <div className="w-14 h-14 rounded-md overflow-hidden shadow-sm  flex items-center justify-center p-1">
                           <Image
                             src={exp.logoUrl || "/placeholder.svg"}
                             alt={exp.company}

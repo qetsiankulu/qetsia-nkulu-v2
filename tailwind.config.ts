@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+       boxShadow: { 
+        'glass-inset': 'inset 0 17px 5px -9px rgba(254, 254,91, 0.05)',
+        'glass-sm': '5px 5px 20px 0px rgba(254, 254,91, 0.3)'
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

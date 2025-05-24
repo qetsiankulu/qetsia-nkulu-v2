@@ -69,7 +69,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div 
-            className="lg:w-2/3 h-[500px]"
+            className="lg:w-2/3 lg:h-[500px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}

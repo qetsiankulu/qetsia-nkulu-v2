@@ -59,7 +59,7 @@ export default function Projects() {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-md transition-colors duration-300 backdrop-blur-sm border border-white/10"
+                    className="flex items-center justify-center px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-colors duration-300 backdrop-blur-sm border border-white/10"
                     aria-label={`GitHub repository for ${project.title}`}
                   >
                     <LucideGithub className="w-4 h-4 mr-2" />
@@ -69,7 +69,7 @@ export default function Projects() {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center px-4 py-2 bg-[#ffd90d] hover:bg-yellow-500 text-gray-900 rounded-md transition-colors duration-300"
+                    className="flex items-center justify-center px-4 py-2 bg-[#ffd90d] hover:bg-yellow-500 text-gray-900 rounded-xl transition-colors duration-300"
                     aria-label={`Live demo for ${project.title}`}
                   >
                     <span>View Project</span>
