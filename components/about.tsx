@@ -278,7 +278,7 @@ export default function About() {
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.93+ index * 0.1 }}
                     viewport={{ once: true }}
                     className="flex items-start p-3 rounded-xl border border-white/20 hover:border-yellow-500/30 transition-all duration-300 hover:shadow-md bg-white/10 backdrop-blur-sm"

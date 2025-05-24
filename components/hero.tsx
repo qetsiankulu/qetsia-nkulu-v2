@@ -8,7 +8,13 @@ import ResponsiveQN from "./ResponsiveQN"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 px-4 sm:px-6 lg:px-8">
+    <section 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 px-4 sm:px-6 lg:px-8
+                 bg-fixed bg-no-repeat bg-[url('/images/home-background.jpg')] bg-[length:200vh] bg-[position:-420px_0px] md:bg-none"    
+    >
+      {/* Add overlay only for mobile hero */}
+      <div className="absolute inset-0 bg-black/50 md:hidden"></div>
+
       <div className="container mx-auto max-w-6xl z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <motion.div
@@ -22,7 +28,7 @@ export default function Hero() {
             </h1>
             <div className="text-xl sm:text-2xl md:text-3xl text-[#ffd90d] mb-8 h-16">
               <TypeAnimation
-                sequence={["I'm a Computer Science Student", 2000, "I'm an iOS Developer", 2000, "I'm a Problem Solver", 2000]}
+                sequence={["I'm a Software Engineer", 2000, "I'm an iOS Developer", 2000, "I'm a Problem Solver", 2000]}
                 wrapper="span"
                 speed={50}
                 repeat={Number.POSITIVE_INFINITY}
@@ -69,7 +75,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div 
-            className="lg:w-2/3 lg:h-[500px]"
+            className="lg:w-2/3 h-[320px] md:h-[400px] lg:h-[500px] xl:h-[600px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
