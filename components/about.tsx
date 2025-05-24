@@ -276,7 +276,6 @@ export default function About() {
               <div className="space-y-3">
                 {certificationsData.map((cert, index) => (
                   <motion.div
-
                     key={index}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}

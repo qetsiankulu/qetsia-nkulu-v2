@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "TranslateMe",
-    description: "A multilingual translation app that uses the Memory API, Firestore for data persistence, and seamless navigation to manage and clear saved translationsI",
+    description: "A multilingual translation app that uses the Memory API, Firestore for data persistence, and seamless navigation to manage and clear saved translations",
     imageUrl: "images/codepath.png",
     githubLink: "https://github.com/qetsiankulu/ios102-project6-translateme",
     demoLink: "https://www.loom.com/share/6259d6ec881f49e7826069c9887871d2",
