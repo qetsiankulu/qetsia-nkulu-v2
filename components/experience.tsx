@@ -25,7 +25,7 @@ const experiences = [
       "Identified patterns from the user research data and generated over 11 user insights on UCLA students",
       "Conducted a competitive analysis on 3 apartment websites to create understanding of market trends and user-interface standards ",
       "Defined 13 relevant UI features to incorporate in the website redesign",
-      "Initiated design reviews with an industry professional during the reiteration process of the prototype biweekly}"
+      "Initiated design reviews with an industry professional during the reiteration process of the prototype biweekly"
     ],
     logoUrl: "images/unishack.png",
   },
