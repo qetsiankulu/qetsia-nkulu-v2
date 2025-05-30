@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
             <div className="text-xl sm:text-2xl md:text-3xl text-[#ffd90d] mb-8 h-16">
               <TypeAnimation
-                sequence={["I'm a Software Engineer", 2000, "I'm an iOS Developer", 2000, "I'm a Problem Solver", 2000, "I'm a UI/UX Enthusiast", 2000]]}
+                sequence={["I'm a Software Engineer", 2000, "I'm an iOS Developer", 2000, "I'm a Problem Solver", 2000, "I'm a UI/UX Enthusiast", 2000]}
                 wrapper="span"
                 speed={50}
                 repeat={Number.POSITIVE_INFINITY}
