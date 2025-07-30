@@ -138,7 +138,7 @@ export default function About() {
                 I have also completed CodePath’s iOS Development pathway. My experience at Codepath deepened my interest in mobile technology and motivated me to become an iOS developer.
                  </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Currently, I'm Software Engineer Intern at Nupt.AI, helping shape the future of wedding planning through AI.
+                  Currently, I'm a Software Engineer Intern at Nupt.AI, helping shape the future of wedding planning through AI.
                 </p>
                 
               </div>
