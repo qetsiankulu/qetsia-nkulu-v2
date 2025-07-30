@@ -12,9 +12,24 @@ const experiences = [
     period: "Mar 2025 - Present",
     location: "Los Angeles, CA",
     responsibilities: [
-      "Accomplished a 33% improvement in site reliability by resolving front-end bugs across key pages by identifying and fixing production issues in the codebases",
+      "Built a scalable CMS for 7+ admin users by writing technical specs, designing in Figma, and building in Bubble.io with custom data types and role-based access",
+      "Developed create/edit/delete features tied to user roles, achieving 100% adoption of CMS by developer teams",
+      "Streamlined UI/UX by translating 8 wireframes into responsive webpages, enhancing usability and reducing content management errors", 
+      "Accomplished a 33% improvement in overall site stability by resolving front-end bugs across key pages by identifying and fixing production issues in the codebase",
     ],
     logoUrl: "images/nupt.png",
+  },
+    {
+    company: "Stanford Medicine - Department of Biomedical Data Science",
+    position: "Participant",
+    period: "Jan 2025 - Mar 2025",
+    location: "Remote",
+    responsibilities: [
+      "Participated in Stanford’s Mentoring in Data Science program",
+      "Engaged in one-on-one mentorship with a Stanford graduate student for 10 weeks",
+      "Received data science tutoring while exploring mini-research projects"
+    ],
+    logoUrl: "images/stanford-med.jpg",
   },
   {
     company: "BruinShack (now UniShack)",
@@ -35,7 +50,7 @@ export default function Experience() {
   return (
     <section id="experience" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <SectionHeading>Work Experience</SectionHeading>
+        <SectionHeading>Experience</SectionHeading>
 
         {/* Yellow underline below heading */}
         <div className="w-24 h-1 bg-[#ffd90d] mx-auto mt-2 mb-16"></div>
