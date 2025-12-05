@@ -62,7 +62,9 @@ export default function Projects() {
               viewport={{ once: true }}
               className="group bg-black/40 backdrop-blur-md rounded-xl overflow-hidden shadow-lg border border-white/10 hover:shadow-2xl hover:shadow-yellow-900/40 transition-all duration-300"
             >
-              <div className="relative h-56 overflow-hidden">
+
+              { /* Project Image */}
+              {/* <div className="relative h-56 overflow-hidden">
                 <Image
                   src={`https://opengraph.githubassets.com/1/${project.githubLink.replace('https://github.com/', '')}`}
                   alt={project.title}
@@ -70,7 +72,7 @@ export default function Projects() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+              </div> */}
 
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#ffd90d] transition-colors duration-300">
