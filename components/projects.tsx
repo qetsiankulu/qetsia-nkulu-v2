@@ -7,20 +7,42 @@ import { LucideExternalLink, LucideGithub } from "lucide-react"
 
 const projects = [
   {
+    title: "VoiceOrb",
+    description: "A dynamic animated visual inspired by agentic AI interfaces with distinct color, glow, and motion states representing idle, listening, and talking behaviors",
+    githubLink: "https://github.com/qetsiankulu/VoiceOrb",
+    demoLink: "https://www.loom.com/share/7337f9cf5d9c4542b31d6a89e0994b3e",
+  },
+  {
+    title: "AfriGoal",
+    description: "Fan-focused iOS app for AFCON 2025 featuring live scores, real-time updates, team selection onboarding, and personalized notifications for African Cup of Nations matches",
+    githubLink: "https://github.com/qetsiankulu/afrigoal-afcon-2025",
+    demoLink: "https://www.loom.com/share/ee2278b276d24d8fa3cc7350febbc822",
+  },
+  {
     title: "PhotoScavengerHunt",
     description: "An iOS app that allows users to capture or select photos from large libraries and visualize them on a dynamic map with custom markers based on image metadata",
-    imageUrl: "images/codepath.png",
     githubLink: "https://github.com/qetsiankulu/ios102-project1-scavenger-hunt",
     demoLink: "https://www.loom.com/share/9b658daa464342a291a0be4bcf1cf7e7",
   },
   {
     title: "TranslateMe",
     description: "A multilingual translation app that uses the Memory API, Firestore for data persistence, and seamless navigation to manage and clear saved translations",
-    imageUrl: "images/codepath.png",
     githubLink: "https://github.com/qetsiankulu/ios102-project6-translateme",
     demoLink: "https://www.loom.com/share/6259d6ec881f49e7826069c9887871d2",
+  },
+  {
+    title: "TriviaGame",
+    description: "An app that challenges users with trivia questions spanning various categories and difficulties, featuring a timer, score tracking, and dynamic question management",
+    githubLink: "https://github.com/qetsiankulu/ios102-project5-triviagame",
+    demoLink: "https://www.loom.com/share/b6a2d7d3a49141dca6771dc1542be7ec",
+  },
+  {
+    title: "MemoryGame",
+    description: "A classic memory matching game where users flip cards to find pairs, with customizable difficulty levels and an engaging interactive interface",
+    githubLink: "https://github.com/qetsiankulu/ios102-project4-memorygame",
+    demoLink: "https://www.loom.com/share/3e235e028d3c481e9daa66870688630c",
   }
-]
+];
 
 export default function Projects() {
   return (
@@ -42,7 +64,7 @@ export default function Projects() {
             >
               <div className="relative h-56 overflow-hidden">
                 <Image
-                  src={project.imageUrl || "/placeholder.svg"}
+                  src={`https://opengraph.githubassets.com/1/${project.githubLink.replace('https://github.com/', '')}`}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

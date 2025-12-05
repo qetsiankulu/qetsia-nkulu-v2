@@ -30,9 +30,9 @@ const educationData = [
 
 const skillsData = {
   languages: [
+    { name: "Swift", icon: "images/swift.svg?height=40&width=40" },
     { name: "Python", icon: "images/python.svg?height=40&width=40" },
     { name: "Java", icon: "images/java.svg?height=40&width=40" },
-    { name: "Swift", icon: "images/swift.svg?height=40&width=40" },
     { name: "JavaScript", icon: "images/javascript.svg?height=40&width=40" },
     { name: "HTML", icon: "images/html.svg?height=40&width=40" },
     { name: "CSS", icon: "images/css.svg?height=40&width=40" },
@@ -42,17 +42,24 @@ const skillsData = {
     { name: "UIKit", icon:"images/swift.svg?height=40&width=40" }, 
     { name: "React.js", icon: "images/react.svg?height=40&width=40" }, 
     { name: "Next.js", icon: "images/nextjs.svg?height=40&width=40" }, 
-    { name: "Tailwind CSS", icon: "images/tailwind.svg?height=40&width=40" }, 
+    { name: "Tailwind CSS", icon: "images/tailwind.svg?height=40&width=40" } 
   ],
   tools: [
-    { name: "Git/Github", icon: "images/git.svg?height=40&width=40" },
-    { name: "VS Code", icon: "images/vscode.svg?height=40&width=40" },
     { name: "Xcode", icon: "images/xcode.svg?height=40&width=40" },
-    { name: "Postman", icon: "images/postman.svg?height=40&width=40" },
+    { name: "Figma", icon: "images/figma.svg?height=40&width=40" },
+    { name: "Git", icon: "images/git.svg?height=40&width=40" },
+    { name: "VS Code", icon: "images/vscode.svg?height=40&width=40" }
   ],
 }
 
 const certificationsData = [
+    {
+    name: "Intro to Technical Interview Prep",
+    issuer: "Codepath",
+    date: "2024",
+    logo: "images/codepath.png",
+    credentialId: "69541",
+  },
   {
     name: "Intermediate iOS Development",
     issuer: "Codepath",
@@ -67,6 +74,14 @@ const certificationsData = [
     logo: "images/codepath.png",
     credentialId: "190620",
   },
+  {
+    name: "UI/UX Boot Camp Certification",
+    issuer: "UC Berkeley Extension",
+    date: "2022",
+    logo: "images/uc-berkely.png",
+  },
+  
+  
 ]
 
 interface SkillProps {
@@ -122,24 +137,27 @@ export default function About() {
 
               <div className="pl-13">
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  I graduated from UCLA in 2022 with a Bachelor of Science in Cognitive Science. Shortly after, I joined 
-                  a UCLA-affiliated startup called BruinShack as a UI/UX Intern.
+                With a background in UI/UX, I bring a strong product mindset to iOS development. 
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  During my six months there, I discovered that I was more interested in building apps rather than conducting user research. 
+                I combine product thinking with scalable architecture, which makes me especially effective in early-stage product environments where fast iteration, clean design systems, and long-term maintainability are essential.
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  This realization led me to pursue a more technical path. I enrolled in the Applications Programming certificate at UCLA Extension.
+                I enjoy turning complex user flows into reliable, testable code that’s easy to scale and iterate on.
+                </p>
+
+                 <p className="text-gray-300 mb-6 leading-relaxed">
+                Currently, I am the Lead iOS Engineer at a San Diego-based startup, where I focus on building scalable, modular SwiftUI architectures. 
+                I’ve led the development of key features such as dynamic onboarding flows and a decoupled authentication system built for clarity and testability.
+                </p>
+
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  I am from the Democratic Republic of Congo. I lived in Kinshasa, Congo for most of my life. I moved to Los Angeles right after I finished high school for my undergraduate studies. 
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                 I built a solid foundation in software development and completed the program with a 4.0 GPA.
+                  In my free time, I like reading novels, working out, gaming, watching anime, exploring different music genres, and practicing guitar.
                 </p>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                I have also completed CodePath’s iOS Development pathway. My experience at Codepath deepened my interest in mobile technology and motivated me to become an iOS developer.
-                 </p>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  Currently, I'm a Software Engineer Intern at Nupt.AI, helping shape the future of wedding planning through AI.
-                </p>
+
                 
               </div>
             </motion.div>
@@ -207,7 +225,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-black/40 backdrop-blur-md rounded-xl p-6 border border-white/10"
+            className="bg-black/40 backdrop-blur-md rounded-xl px-6 pt-6 pb-3 border border-white/10 "
           >
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-white">Technical Skills</h3>
@@ -256,7 +274,7 @@ export default function About() {
             </div>
 
             {/* Tools */}
-            <div className="mb-8">
+            <div className="mb-4">
               <div className="flex items-center mb-4">
                 <LucideWrench className="w-5 h-5 text-[#ffd90d] mr-2" />
                 <h4 className="text-lg font-semibold text-gray-200">Tools</h4>
@@ -307,9 +325,13 @@ export default function About() {
                       <h4 className="text-sm font-semibold text-white">{cert.name}</h4>
                       <p className="text-[#ffd90d] font-medium text-xs">{cert.issuer}</p>
                       <div className="flex items-center mt-0.5 text-xs text-gray-300">
-                        <span>Issued {cert.date}</span>
-                        <span className="mx-1.5">•</span>
-                        <span className="truncate">ID: {cert.credentialId}</span>
+                   <span>Issued {cert.date}</span>
+                    {cert.credentialId && (
+                            <>
+                              <span className="mx-1.5">•</span>
+                              <span className="truncate">ID: {cert.credentialId}</span>
+                            </>
+                      )}
                       </div>
                     </div>
                   </motion.div>

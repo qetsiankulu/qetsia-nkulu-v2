@@ -6,30 +6,40 @@ import Image from "next/image"
 import { LucideCalendar, LucideMapPin } from "lucide-react"
 
 const experiences = [
-  {
-    company: "Nupt.AI",
-    position: "Software Engineer Intern",
-    period: "Mar 2025 - Present",
-    location: "Los Angeles, CA",
-    responsibilities: [
-      "Built a scalable CMS for 7+ admin users by writing technical specs, designing in Figma, and building in Bubble.io with custom data types and role-based access",
-      "Developed create/edit/delete features tied to user roles, achieving 100% adoption of CMS by developer teams",
-      "Streamlined UI/UX by translating 8 wireframes into responsive webpages, enhancing usability and reducing content management errors", 
-      "Accomplished a 33% improvement in overall site stability by resolving front-end bugs across key pages by identifying and fixing production issues in the codebase",
-    ],
-    logoUrl: "images/nupt.png",
-  },
     {
-    company: "Stanford Medicine - Department of Biomedical Data Science",
-    position: "Participant",
-    period: "Jan 2025 - Mar 2025",
+    company: "TOKK",
+    position: "Lead iOS Engineer",
+    period: "Dec 2025 - Present",
     location: "Remote",
     responsibilities: [
-      "Participated in Stanford’s Mentoring in Data Science program",
-      "Engaged in one-on-one mentorship with a Stanford graduate student for 10 weeks",
-      "Received data science tutoring while exploring mini-research projects"
+      "Built a streamlined onboarding and authentication flow using a clean MVVM structure with flexible page generation and validation.", 
+      "Separated authentication logic from the UI to simplify the codebase and enable easier testing.",
+      "Coordinated signup, login, and onboarding across dedicated components to support a smooth and extensible user experience."
     ],
-    logoUrl: "images/stanford-med.jpg",
+    logoUrl: "images/tokk.jpeg",
+  },
+  {
+    company: "TOKK",
+    position: "iOS Engineering Intern",
+    period: "Oct 2025 - Dec 2025",
+    location: "Remote",
+    responsibilities: [
+      "Refactored complex SwiftUI views into modular computed properties to resolve type-checking issues and ensure stable compilation.",
+      "Built maintainable, testable services in Swift, including a ConversationManager for message history, a WebSocketService for real-time streaming with reconnection logic, and an AudioPlaybackService using Combine for clean audio handling.",
+      "These improvements enhanced code reliability, test coverage, and real-time performance."
+    ],
+    logoUrl: "images/tokk.jpeg",
+  },
+  {
+    company: "Nupt.AI",
+    position: "Software Engineering Intern",
+    period: "Mar 2025 - Jun 2025",
+    location: "Los Angeles, CA",
+    responsibilities: [
+      "Developed a content management system with role-based access and admin tools for the website's Blog Feature.",
+      "Improved platform stability by fixing front-end issues across key pages, resulting in a smoother and more reliable experience."
+    ],
+    logoUrl: "images/nupt.png",
   },
   {
     company: "BruinShack (now UniShack)",
@@ -37,10 +47,8 @@ const experiences = [
     period: "Oct 2022 - Feb 2023",
     location: "Remote",
     responsibilities: [
-      "Identified patterns from the user research data and generated over 11 user insights on UCLA students",
-      "Conducted a competitive analysis on 3 apartment websites to create understanding of market trends and user-interface standards ",
-      "Defined 13 relevant UI features to incorporate in the website redesign",
-      "Initiated design reviews with an industry professional during the reiteration process of the prototype biweekly"
+      "Analyzed user research to uncover key insights about UCLA students and guided design decisions with competitive analysis of major apartment platforms.",
+      "Defined essential UI features for the website redesign and facilitated regular design reviews with industry mentors to refine the prototype throughout development.",
     ],
     logoUrl: "images/unishack.png",
   },
