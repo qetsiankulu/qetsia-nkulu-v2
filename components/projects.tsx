@@ -6,7 +6,14 @@ import Image from "next/image"
 import { LucideExternalLink, LucideGithub } from "lucide-react"
 
 const projects = [
-    {
+   {
+    title: "OMSCS Radar",
+    description: "Chrome extension surfacing community-sourced ratings, difficulty scores, and workload data directly on the OMSCS course catalog. Built with FastAPI + PostgreSQL, deployed on Railway, and designed for Georgia Tech students planning their graduate CS coursework.",
+    githubLink: "https://github.com/xqetsia/omscs-radar", 
+    demoLink: "https://chromewebstore.google.com/detail/bgiiadolikpdpnfghgiafjjfnedfhfbe?utm_source=item-share-cb",
+    technologies: ["Python", "TypeScript", "Node.js", "FastAPI", "PostgreSQL", "Docker", "SQLAlchemy"]
+  },
+  {
     title: "DRC Mineral Production API",
     description: "Production REST API surfacing critical mineral supply chain data for the Democratic Republic of Congo. Built with FastAPI + PostgreSQL, deployed on Render, and designed for researchers and ESG analysts working on responsible sourcing.",
     githubLink: "https://github.com/xqetsia/drc-minerals-api", 
@@ -39,13 +46,13 @@ const projects = [
     demoLink: "https://www.loom.com/share/9b658daa464342a291a0be4bcf1cf7e7",
      technologies: ["UIKit", "PHPicker", "MapKit", "PhotosUI", "Git"]
   },
-  {
-    title: "MemoryGame",
-    description: "A classic memory matching game where users flip cards to find pairs, with customizable difficulty levels and an engaging interactive interface",
-    githubLink: "https://github.com/qetsiankulu/ios102-project4-memorygame",
-    demoLink: "https://www.loom.com/share/3e235e028d3c481e9daa66870688630c",
-    technologies: ["Swift", "SwiftUI"]
-  }
+  // {
+  //   title: "MemoryGame",
+  //   description: "A classic memory matching game where users flip cards to find pairs, with customizable difficulty levels and an engaging interactive interface",
+  //   githubLink: "https://github.com/qetsiankulu/ios102-project4-memorygame",
+  //   demoLink: "https://www.loom.com/share/3e235e028d3c481e9daa66870688630c",
+  //   technologies: ["Swift", "SwiftUI"]
+  // }
 ];
 
 export default function Projects() {

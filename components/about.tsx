@@ -17,7 +17,7 @@ const educationData = [
    {
     institution: "Georgia Institute of Technology",
     degree: "Master of Science in Computer Science",
-    period: "2026 - 2029",
+    period: "2026 - 2028",
     logo: "images/georgia-tech-logo.jpeg",
   },
   //   {
@@ -145,52 +145,49 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-white">Who I Am</h3>
               </div>
 
-              <div className="pl-13">
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    I am an engineer-product thinker. I bring a strong product mindset to software engineering. I 
-                    combine design intuition with scalable architecture to build systems that are both 
-                    functional and maintainable from day one.
-                  </p>
+             <div className="pl-13">
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  I am an engineer-product thinker. I bring a strong product mindset to software engineering. I
+                  combine technical execution with an eye for the bigger picture to build systems that are both
+                  functional and built to last.
+                </p>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    My experience spans design and engineering across a variety of products, from a{" "}
-                    <a href="https://www.unishack.com/" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
-                      student housing platform
-                    </a>
-                    , to an{" "}
-                    <a href="https://nupt.ai/" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
-                      AI wedding planner
-                    </a>
-                    , to an{" "}
-                    <a href="https://tokk.ai/" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
-                      agentic movement coach
-                    </a>
-                    . Each project pushed me to take ownership from problem definition to delivery,
-                    iterating quickly while keeping long-term maintainability in focus.
-                  </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                My engineering experience spans a range of real products. At{" "}
+                <a href="https://tokk.ai/" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
+                  TOKK
+                </a>
+                , I built a modular WebSocket layer and SwiftUI authentication architecture. At{" "}
+                <a href="https://nupt.ai/" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
+                  Nupt.AI
+                </a>
+                , I designed and shipped a production-grade CMS backend with role-based access control.
+              </p>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    I have proven experience building production-quality code that is readable, 
-                    well-tested, and extensible. I've designed systems end-to-end, including a{" "}
-                    <a href="https://nupt.ai/blog" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
-                      blog CMS
-                    </a>
-                    {" "} and {" "}
-                    <a href="https://www.loom.com/share/5312c7d1d7ab494a9978ac1315c48b1f" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
-                      an iOS onboarding feature
-                    </a>, applying large-scale system design principles 
-                    to ensure each solution is built to grow.
-                  </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  I have proven experience building production-quality code that is readable,
+                  well-tested, and extensible. I've designed systems end-to-end, including a{" "}
+                  <a href="https://nupt.ai/blog" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
+                    blog CMS
+                  </a>
+                  {" "}and{" "}
+                  <a href="https://www.loom.com/share/5312c7d1d7ab494a9978ac1315c48b1f" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#ffd90d]">
+                    an iOS onboarding feature
+                  </a>
+                  , applying system design principles to ensure each solution is built to grow.
+                </p>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed"> 
-                    Beyond the code, I've led research-driven redesigns grounded in target user demographics. I understand that different user populations have fundamentally different needs. 
-                  </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  As a junior engineer, I am focused on deepening my technical foundations and becoming the kind
+                  of engineer who can own hard problems end-to-end. I care most about writing code that is clean, well-reasoned, and built with
+                  the team and end-user in mind.
+                </p>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    Outside of work, I like reading novels, working out, gaming, watching anime, 
-                    exploring different music genres, and practicing guitar.
-                  </p>   
-              </div>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Outside of work, I like reading novels, working out, gaming, watching anime,
+                  exploring different music genres, and practicing guitar.
+                </p>
+          </div>
             </motion.div>
 
             {/* Education */}

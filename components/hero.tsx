@@ -42,7 +42,7 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-4"
             >
               <a
-                href="https://drive.google.com/file/d/1xmSm_H1ujbYYHlS7h5nGoAhER7qpOj_n/view?usp=sharing"
+                href="https://drive.google.com/file/d/1p7GNm6jXOp-IzNCJkILEcjVQGFlb2Ice/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-[#ffd90d] text-gray-900 font-medium py-3 px-6 rounded-full shadow-lg hover:bg-yellow-400 transition-all duration-300 hover:shadow-yellow-300/30 hover:shadow-xl"
